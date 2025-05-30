@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy2Africa - Travel Made Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-gray-100" style="background-color: #F5F6F5;">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Left side (hidden on mobile) -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-teal-600 font-semibold" style="color: #1A3C34;">About Us</a>
+                    <a href="#return-policy" class="text-gray-700 hover:text-teal-600 font-semibold" style="color: #1A3C34;">Return Policy</a>
+                </div>
+
+                <!-- Logo (Centered) -->
+                <div class="absolute left-1/2 transform -translate-x-1/2">
+                    <img class="h-12 w-12 md:h-16 md:w-16 object-contain" src="https://www.easy2africa.com/wp-content/uploads/2022/02/e2a_logo.png" alt="Easy2Africa Logo">
+                </div>
+
+                <!-- Right side (Login on desktop, Hamburger on mobile) -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="https://admin.easy2africa.com" class="bg-green-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-green-600" style="background-color: #A4C639;">Login</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="pt-2 pb-4 space-y-2">
+                    <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-semibold" style="color: #1A3C34;">About Us</a>
+                    <a href="#return-policy" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 font-semibold" style="color: #1A3C34;">Return Policy</a>
+                    <a href="https://admin.easy2africa.com" class="block px-4 py-2 bg-green-500 text-white font-semibold rounded-md mx-4" style="background-color: #A4C639;">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-teal-900 text-white" style="background-color: #1A3C34;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Explore Africa with Ease</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Trust Easy2Africa to plan your perfect journey with seamless travel solutions and expert support.
+            </p>
+            <a href="#book-now" class="bg-green-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-600" style="background-color: #A4C639;">
+                Book Your Trip
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Why Choose Easy2Africa?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Trusted Expertise</h3>
+                    <p class="text-gray-600">Our team ensures your travel plans are handled with care and professionalism.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Seamless Booking</h3>
+                    <p class="text-gray-600">Book flights, hotels, and tours with ease through our intuitive platform.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                    <p class="text-gray-600">We're here for you around the clock to ensure a worry-free experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-gray-200 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">About Us</h2>
+            <p class="text-gray-700 max-w-3xl">
+                Easy2Africa is your trusted partner for exploring the beauty and diversity of Africa. With years of experience and a passion for travel, we make your journey unforgettable, from planning to execution.
+            </p>
+        </div>
+    </section>
+
+    <!-- Return Policy Section -->
+    <section id="return-policy" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Return Policy</h2>
+            <p class="text-gray-700 max-w-3xl">
+                We offer flexible cancellation and refund options to ensure your peace of mind. Contact our support team for detailed terms and conditions tailored to your booking.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-white py-8" style="background-color: #1A3C34;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2025 Easy2Africa. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#contact" class="hover:text-green-400" style="color: #F5F6F5;">Contact</a>
+                <a href="#privacy" class="hover:text-green-400" style="color: #F5F6F5;">Privacy Policy</a>
+                <a href="#terms" class="hover:text-green-400" style="color: #F5F6F5;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
